@@ -1,0 +1,40 @@
+﻿<Window x:Class="TRPO_WPF_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TRPO_WPF_3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="300">
+    <Grid>
+        <TreeView>
+          
+            <Label Content="Элемент TreeView" Height="25" VerticalAlignment="Top" Width="109"/>
+            <TreeViewItem Header="Базы данных">
+                <TreeViewItem Header="MS SQL Server" />
+                <TreeViewItem Header="MySQL" />
+                <TreeViewItem Header="MongoDB" />
+                <TreeViewItem Header="Postgres" />
+            </TreeViewItem>
+            <TreeViewItem Header="Языки программирования">
+                <TreeViewItem Header="C-языки">
+                    <TreeViewItem Header="C#" />
+                    <TreeViewItem Header="C/C++" />
+                    <TreeViewItem Header="Java" />
+                </TreeViewItem>
+                <TreeViewItem Header="Basic">
+                    <TreeViewItem Header="Visual Basic" />
+                    <TreeViewItem Header="VB.Net" />
+                    <TreeViewItem Header="PureBasic" />
+                    <TreeViewItem>
+                        <TextBox Width="100" x:Name="TB"/>
+                    </TreeViewItem>
+                    <TreeViewItem>
+                        <Button Width="100" Content="Стереть TextBox" Click="Button_Click"/>
+                    </TreeViewItem>
+                    </TreeViewItem>
+            </TreeViewItem>
+            
+        </TreeView>
+    </Grid>
+</Window>
